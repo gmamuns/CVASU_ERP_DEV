@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>publications</servlet-name>
+        <jsp-file>/publications.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>publications</servlet-name>
+        <url-pattern>/publication</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>student</servlet-name>
+        <jsp-file>/student.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>student</servlet-name>
+        <url-pattern>/student</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>insertDB</servlet-name>
+        <jsp-file>/insertDB.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>insertDB</servlet-name>
+        <url-pattern>/insertDB</url-pattern>
+    </servlet-mapping>
+ 
+    <servlet>
+        <servlet-name>insertQuery</servlet-name>
+        <jsp-file>/insertQuery.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>insertQuery</servlet-name>
+        <url-pattern>/insertQuery</url-pattern>
+    </servlet-mapping>
+    
+      
+</web-app>
