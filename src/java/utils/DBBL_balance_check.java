@@ -51,7 +51,7 @@ public class DBBL_balance_check {
             Ref_No = all_Data[1];
             Amount = all_Data[2];
             Txn_date = all_Data[3];
-            return Amount;
+            return Amount;  // send amount of taka to check
 
         } else if (all_Data.length == 2) {
             error_code = all_Data[0];
