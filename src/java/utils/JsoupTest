@@ -1,0 +1,32 @@
+// This is an example of HTML Library Parsing Library (jsoup)base on an article of Oracle Magazine (Nov-Dec 2015)
+/*
+MD MAMUN SIKDER
+gmamuns@gmail.com
+Date: 01 December 2017
+*/
+
+
+
+//Requirement : jsoup-1.8.3.jar
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+
+public class JsoupTest {
+    //HTML tags in String variable
+    static String htmlText = "<!DOCTYPE html>" + "<html>" + "<head>" + "<title>Insert title here</title>" + "</head><body>"
+			+ " <h1>Hello World, welcome to jsoup...</h1>" + "</body></html>";
+	
+    public static void main(String[] args) {
+        Document document  = Jsoup.parse(htmlText);
+                //Get all HTML Elements
+		Elements allElements = document.getAllElements();
+		for(Element element : allElements){
+                        // Print HTML tags and Tag's text respectly
+			System.out.println(element.nodeName()+" "+element.ownText());
+		}
+    }
+	
+}
