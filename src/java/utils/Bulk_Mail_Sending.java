@@ -19,7 +19,7 @@ public class Bulk_Mail_Sending {
 
     public static void main(String[] args) {
         final String username = "gmamuns";
-        final String password = "ihategirls@2013";
+        final String password = "***********8888";
         String from = "gmamuns@gmail.com";
         String to = "ymamuns@yahoo.com";
         String subject = "Hi";
